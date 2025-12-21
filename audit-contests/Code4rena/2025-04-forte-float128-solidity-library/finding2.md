@@ -33,7 +33,7 @@ The resulting computation reaches a `div` or `mod` by zero condition, causing th
 
 ## Proof of Concept
 
-```sol
+```js
 function test_ln_negative_returnsZero() public {
     // Construct a negative packed float
     packedFloat negative = Float128.toPackedFloat(-1e37, -37);
@@ -46,7 +46,7 @@ function test_ln_negative_returnsZero() public {
 
 **Observed result (current)**:
 
-```yaml
+```js
 [FAIL: Error != expected error: panic: division or modulo by zero (0x12) != float128: log of negative number]
 ```
 
@@ -57,7 +57,7 @@ Clean revert with float128: log of negative number.
 
 Add a validation guard at the start of the `ln()` function to reject invalid domain inputs:
 
-```sol
+```js
 function ln(packedFloat input) public pure returns (packedFloat result) {
     if (int256(uint256(packedFloat.unwrap(input))) < 0) {
         revert("float128: log of negative number");
