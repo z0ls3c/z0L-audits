@@ -5,7 +5,8 @@
 **Severity**: High<br>
 **Status**: Valid<br>
 **Reported On**: April 11th 2025<br>
-**Link to Submission**: [Click Here](https://code4rena.com/audits/2025-04-forte-float128-solidity-library/submissions/S-208)
+**Link to Submission**: [Click Here](https://code4rena.com/audits/2025-04-forte-float128-solidity-library/submissions/S-208)<br>
+**Tags:** `solidity` · `math` · `validation` · `domain-error` · `code4rena` · `forte` · `float128` · `panic` · `input-sanitization`
 
 ## Summary
 
