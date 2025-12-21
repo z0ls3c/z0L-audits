@@ -69,4 +69,4 @@ A quick, repeatable checklist for static review + dynamic testing.
 ---
 
 ✅ **Goal:** Always leave a paper trail showing *reasoning, evidence, and reproducibility.*  
-This checklist keeps every audit — contest or independent — consistent and credible.
+This checklist keeps every audit, contest or independent consistent and credible.
