@@ -18,7 +18,7 @@ This occurs because the promotion check only triggers when `mantissaMultiplier >
 
 **Root cause**: Promotion logic depends on
 
-```sol
+```js
 let isResultL := slt(MAXIMUM_EXPONENT, add(exponent, mantissaMultiplier));
 ```
 
@@ -37,7 +37,7 @@ As a result, numbers near the exponent floor remain in M-format (38-digit mantis
 
 ## Proof of Concept
 
-```sol
+```js
 function test_ToPackedFloat_MSizeWithBigExp_PromotesToL() public {
     packedFloat val = Float128.toPackedFloat(1e37, -34); // near max for M
     (int mantissa, int exponent) = Float128.decode(val);
@@ -51,7 +51,7 @@ This test shows that a value at the edge of the safe exponent range is not promo
 
 Add a fallback check after normalization to ensure all critically low exponents trigger promotion regardless of mantissa adjustment:
 
-```sol
+```js
 if (
     packedFloat.unwrap(float) & MANTISSA_L_FLAG_MASK == 0 &&
     exponent <= MAXIMUM_EXPONENT
