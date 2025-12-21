@@ -22,7 +22,7 @@ The contract calculates the amount received by measuring the entire sender’s b
 
 ## Proof of Concept
 
-```solidity
+```js
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
@@ -316,14 +316,14 @@ This fix will explicitly transfer the exact intended token amount (`toAmount`) o
 
 Replace the vulnerable logic:
 
-```solidity
+```js
 uint256 balanceOfSender = tokenReceived.balanceOf(msg.sender);
 SafeERC20.safeTransferFrom(tokenReceived, msg.sender, address(this), balanceOfSender);
 amountReceived = getBalanceOfSelf(toToken) - balanceBefore;
 ```
 with this secure logic:
 
-```
+```js
 SafeERC20.safeTransferFrom(tokenReceived, msg.sender, address(this), toAmount);
 amountReceived = toAmount;
 ```
@@ -360,3 +360,5 @@ Even though the behavior is intentional:
 - It demonstrates my ability to question architectural assumptions and verify edge behavior with code.
 
 This is a strong example of critical thinking and methodical PoC construction — even when the finding is rejected.
+
+**Tags:** `solidity` · `logic` · `reward-system` · `code4rena` · `false-positive` · `intended-behavior` · `analysis` · `learning`
