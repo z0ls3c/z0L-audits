@@ -57,7 +57,7 @@ Every false positive sharpens reasoning and pattern recognition.
 ## 👤 About
 
 I’m **Z**, a Web3 security researcher and Solidity developer with a focus on precision math, access control, and protocol-level logic flaws.  
-I audit for correctness, realism, and economic resilience — not just syntax.
+I audit for correctness, realism, and economic resilience, not just syntax.
 
 ---
 
