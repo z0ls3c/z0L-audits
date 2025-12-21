@@ -5,7 +5,7 @@
 **Severity:** High  
 **Status:** Duplicate submission (valid but unpaid)  
 **Reported On:** March 14th 2025  
-**GitHub Issue:** [Click Here](https://github.com/sherlock-audit/2025-03-crestal-network-judging/issues/580)
+**GitHub Issue:** [Click Here](https://github.com/sherlock-audit/2025-03-crestal-network-judging/issues/580)<br>
 **Tags:** `solidity` · `access-control` · `authorization` · `token-transfer` · `sherlock` · `crestal-network` · `medium-severity` · `logic` · `permissions`
 
 ---
