@@ -63,8 +63,7 @@ I audit for correctness, realism, and economic resilience, not just syntax.
 
 ## 🛠️ Contact
 
-- **GitHub:** [z0Ld3v](https://github.com/z0Ld3v)  
-- **Twitter/X:** [@z0Ld3v](https://x.com/z0Ld3v)
-- **Email:** <a href="mailto:z0ld3v@proton.me">Proton</a>
+- **Twitter/X:** [@z0ls3c](https://x.com/z0Ld3v)
+- **Email:** <a href="mailto:z0ls3c@proton.me">Proton</a>
 
 ---
